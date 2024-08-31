@@ -16,7 +16,7 @@ const attendance = [
 
     try {
         // Check if student exists
-        const student = await db.select().from(students).where(eq(students.user_id, req.body.user_id)).limit(1);
+        const student = await db.select().from(students).where(eq(students.userId, req.body.user_id)).limit(1);
         if (student.length === 0) {
             return res.status(404).json({ message: 'Student not found' });
         }

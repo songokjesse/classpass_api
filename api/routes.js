@@ -1,9 +1,9 @@
 const express = require('express')
-const authenticateToken = require("./auth/authToken");
+const {authenticateToken} = require("./auth/authToken");
 const login = require("./auth/login");
 const register = require("./auth/register");
 const logout = require("./auth/logout");
-const attendance = require("./attendance/attendance");
+const {attendance} = require("./attendance/attendance");
 const routes = express.Router()
 
 routes.post('/login', login)

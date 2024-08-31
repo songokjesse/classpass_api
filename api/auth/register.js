@@ -1,4 +1,3 @@
-const jwt = require("jsonwebtoken");
 const {users} = require("../db/schema");
 const db = require("../db/db");
 const {eq} = require("drizzle-orm");

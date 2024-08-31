@@ -1,4 +1,3 @@
-const express = require('express');
 const { body, validationResult } = require('express-validator');
 const db = require('../db/db'); // Adjust the path as needed
 const { students, timetables, attendances } = require('../db/schema'); // Adjust the path as needed
